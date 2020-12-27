@@ -1,4 +1,0 @@
-bs4==0.0.1
-requests @ file:///tmp/build/80754af9/requests_1608241421344/work
-unicodecsv==0.14.1
-regex @ file:///opt/concourse/worker/volumes/live/93a9c6ee-7d77-4975-4d26-29732dd5574b/volume/regex_1593435592218/work

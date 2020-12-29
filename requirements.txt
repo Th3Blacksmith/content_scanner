@@ -140,6 +140,7 @@ pyobjc-framework-WebKit==7.0.1
 pyperclip==1.8.1
 PyRect==0.1.4
 PyScreeze==0.1.26
+PySimpleGUI==4.32.1
 PyTweening==1.0.3
 requests==2.25.1
 rubicon-objc==0.4.0

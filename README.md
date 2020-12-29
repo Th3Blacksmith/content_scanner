@@ -3,13 +3,11 @@
 
 ## What does it do?
 
-This python3 script can be used a way to check whether any supplied keywords feature in the source code of any of the supplied URLs.
+This program can be used to check whether any keywords from a list you supply feature in the source code of any of the URLs that you feed it.
 
 ### Requirements
 
-After creating a new environment using python3 -m venv env, you will want to install all the needed requirements to run the script.
-To do this, simply type in the terminal "pip install -r requirements.txt".
-You will then also have to give the .py file executive permissions by typing chmod 777 content_scanner.py.
+Python 3 should be installed on your machine.
 
 
 # Usage - MAC/LINUX

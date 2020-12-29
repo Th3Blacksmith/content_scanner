@@ -23,7 +23,7 @@ To run this script, simply type "python Content_Scanner_Script.py". You will be 
 
 On Mac/Linux, you may be shown a permission denied message when you try to run this script. In this case, simply type 'sudo' infront of the python command. eg 'sudo python Content_Scanner_Script.py 'password'
 
-This script will make a folder named 'screenshots' in the current working directory and update it with the screenshots it takes, label by the keyword-find that triggered it. There is a 5 second delay between the loading of each webpage to allow for the loading of the page. Feel free to adjust this to your needs by modifying the time.sleep() value on line 38 in the Content_Scanner_Script.py file.
+This script will make a folder named 'screenshots' in the current working directory and update it with the screenshots it takes, label by the keyword-find that triggered it. There is a 5 second delay between the loading of each webpage to allow for the loading of the page. Feel free to adjust this to your needs by modifying the time.sleep() value on line 38 in the Content_Scanner_Script.py file and line 50 in the Content_Scanner_GUI.py file respectively.
 
 ## GUI Usage
 

@@ -11,7 +11,7 @@ Fire up the terminal and type 'pip install -r requirements.txt'.
 This will install any and all packages neccessary to run the script.
 
 
-# Usage
+# Script Usage
 
 To use this script, first cd into the directory you would like to work from or make one if you need to.
 Next grab a copy of this project by typing into your terminal "git clone https://github.com/Th3Blacksmith/content_scanner.git".
@@ -23,3 +23,7 @@ To run this script, simply type "python Content_Scanner_Script.py". You will be 
 On Mac/Linux, you may be shown a permission denied message. In this case, simply type 'sudo' infront of the python command. eg 'sudo python Content_Scanner_Script.py 'password'
 
 This script will make a folder named screenshots in the current working directory and update it with the screenshots it takes. There is a 5 second delay between the loading of each webpage to allow for the loading of the page. Feel free to adjust this to suit by modifying the time.sleep() value on line 38 in the Content_Scanner_Script.py file.
+
+## GUI Usage
+
+The above instructions also hold true for the Content_Scanner_GUI.py script. The only difference here is that the Content_Scanner_GUI.py script will fire up a GUI to let browse local files for the keyword and URL files that you would like to use.

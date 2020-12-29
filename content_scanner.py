@@ -10,36 +10,41 @@ import time
 import os
 import sys
 
+
 cwd = os.getcwd()
 folder = 'screenshots'
-os.mkdir(folder)
+try:
+    os.mkdir(folder)
+except OSError as error:
+    pass
 
 sg.theme('Light Blue 2')
 
 layout = [[sg.Text('Choose files for your wordlist and URL list')],
           [sg.Text('Keywords', size=(8, 1)), sg.Input(), sg.FileBrowse()],
           [sg.Text('URLs', size=(8, 1)), sg.Input(), sg.FileBrowse()],
+          [sg.Text('Both Keywords and URL files should have only one value on each line!')],
           [sg.Submit(), sg.Cancel()]]
 
 window = sg.Window('Content Scanner', layout)
 
-event, values = window.read()
+event, values = window.Read()
 window.close()
 
 print(f'You clicked {event}')
 print(f'You chose filenames {values[0]} and {values[1]}')
 
+
+
 keywords = values[0]
 
-wordlist = [line.strip() for line in open(keywords)]
-wordlist.pop(0)
+wordlist = [line.strip() for line in open(keywords, encoding='utf-8-sig')]
 
 websites = values[1]
 
-with open(websites) as f:
+with open(websites, encoding='utf-8-sig') as f:
     URLs = [line.split()[0] for line in f]
-    URLs.pop(0)
-
+ 
 print(wordlist)
 print(URLs)
 
@@ -64,3 +69,5 @@ for i in wordlist:
 print('')
 print('')
 print('<================= Process Completed =================>')
+
+sg.Popup('Process Completed!', font=('cambria', 14))

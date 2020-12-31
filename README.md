@@ -8,7 +8,7 @@ This program can be used to check whether any keywords from a list you supply fe
 ### Requirements
 
 Grab a copy of this project by typing into your terminal "git clone https://github.com/Th3Blacksmith/content_scanner.git".
-Fire up the terminal and type 'pip install -r requirements.txt'. Or if using windows, 'pip install -r requirements_windows.txt'.
+Now type 'pip install -r requirements.txt'. Or if using windows, 'pip install -r requirements_windows.txt'.
 This will install any and all packages neccessary to run the script.
 
 If running the script version on Windows and getting an error message, you may need to manually install pyautogui from the terminal using the following code: 'pip.exe install pyautogui'
